@@ -1,12 +1,12 @@
 public class Author {
-    private String FirstName;
-    private String LastName;
-    private String MiddleName;
+    private String firstName;
+    private String lastName;
+    private String middleName;
 
     public Author(String FirstName, String LastName, String MiddleName) {
-        this.FirstName = FirstName;
-        this.LastName = LastName;
-        this.MiddleName = MiddleName;
+        this.firstName = FirstName;
+        this.lastName = LastName;
+        this.middleName = MiddleName;
 
     }
 
@@ -17,21 +17,21 @@ public class Author {
     @Override
     // Делаем вывод метода в визуально удобном представлении
     public String toString() {
-        final StringBuilder fullName = new StringBuilder(FirstName);
-        fullName.append(" ").append(MiddleName);
-        fullName.append(" ").append(LastName);
+        final StringBuilder fullName = new StringBuilder(firstName);
+        fullName.append(" ").append(middleName);
+        fullName.append(" ").append(lastName);
         return fullName.toString().replace("  ", " ");
     }
 
     public String getFirstName() {
-        return FirstName;
+        return firstName;
     }
 
     public String getLastName() {
-        return LastName;
+        return lastName;
     }
 
     public String getMiddleName() {
-        return MiddleName;
+        return middleName;
     }
 }
